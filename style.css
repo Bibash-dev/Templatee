@@ -1,0 +1,441 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.navbar {
+    display: flex;
+    color: #fc3;
+    padding: 20px;
+    padding-right: 40px;
+}
+
+nav {
+
+    flex: 1;
+    text-align: right;
+
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+
+}
+
+nav ul li {
+    display: inline-block;
+  
+    color: #fc3;
+}
+
+.logo {
+    margin-top: -29px;
+    margin-left: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: #fc3;
+    font-weight: 600;
+
+    font-size: 18px;
+}
+
+a:hover {
+    color: grey;
+}
+
+.style{
+  width: 80%;
+   height: auto;
+    background-color: gray;
+    filter: grayscale(100%);
+    transform: perspective(600px) rotateX(25deg)
+  
+}
+.style:hover{
+    transition: 1s ease;
+    transform: translateY(0px);
+    filter: grayscale(0);
+}
+
+.tips{
+    height:auto;
+    width: 100%;
+  background-color: black;
+    color: white;
+    padding-bottom: 50px;
+}
+.tips h3{
+    font-size: 32px;
+font-weight: 600;
+    text-align: center;
+    margin-top: 200px;
+   padding-bottom: 30px;
+}
+.tips h6{
+    margin-top: 30px;
+}
+.tips h4{
+   text-align: center   ;
+   margin-top: 20px;
+   color: #fc3;
+}
+.tips img{
+    width:300px;
+}
+
+.banner{
+    margin-top: -88px;
+    margin-bottom: 100px;
+    width:100%;
+   padding-right: 10px;
+    height:800px;
+    background:url(image/op.jpg);
+    background-position: center;
+    background-size: cover;
+    float:right;
+}
+.box{
+    position: fixed;
+  top:650px;
+}
+.box img{
+    border-radius: 30px;
+    border: white;
+    outline: none;
+}
+  
+img{
+    margin:10px 0px 0px 40px;
+}
+h2{
+    line-height: 1.4;
+    color: #000;
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 150px 0px 0px 30px;
+}
+.zookti{
+    font-size: 1.3rem;
+    color: #000;
+    margin: 40px 0px 0px 30px;
+}
+.explain{
+    width:auto;
+}
+
+.buts{
+    margin-left: 30px;
+    display: flex;
+}
+#button1{
+    margin-top:20px;
+    background-color: black;
+    color: white;
+
+}
+#button2{
+    margin-top:20px;
+}
+.butto{
+    margin-left: 30px;
+    margin-bottom: 50px;
+}
+#button1:hover{
+    background-color: rgb(59, 57, 57);
+    color: #fc3;
+}
+#button5{
+    margin-top:20px ;
+    width: 100px;
+    color: white;
+    background-color: black;
+}
+#button2:hover{
+background-color: white;
+color: #fc3;
+}
+
+#menu{
+color:#fc3; 
+}
+#menu ul{
+float: right;
+margin-top:15px;
+}
+#menu a{
+    list-style-type: none;
+    text-decoration: none;
+    color:#fc3;
+    line-height: 1.4;
+    float: right;
+   margin:0px 90px 0px 0px;
+   font-weight: 600;
+}
+#menu a:hover{
+    color:azure;
+}
+#heading{
+   text-align: center;
+    font-size: 35px;
+    font-weight: 450;
+    text-decoration: none;
+    color: black;
+    padding-bottom: 100px;
+
+}
+#heading:hover{
+    color:#fc3 ;
+    text-decoration: underline;
+   
+}
+
+
+.team{
+ 
+    margin: 100px 0px 0px 0px;
+}
+
+.op{    
+    margin-top: 30px;
+  
+}
+.peace{
+text-align: center;
+    filter: grayscale(100%);
+    transition: transform 0.5s;
+}
+.peace img{
+    width: 250px;
+    height: auto;
+    cursor: pointer;
+   
+   
+   
+}
+
+
+.peace:hover{
+filter: grayscale(0);
+}
+
+.peace:hover{
+    transform:translateY(-50px);
+}
+
+ .peace p{
+    padding-bottom: 100px;
+    text-align: center;
+}
+.peace a{
+ margin-left: 70px;
+ font-size: 30px;
+ text-decoration: none;
+ color: black;
+}
+.peace a:hover{
+color:#fc3 ;
+text-decoration: underline;
+}
+.blog{
+    background-color: #000; 
+    padding-bottom: 80px;
+   
+}
+.blog1{
+    margin: auto;
+   margin-left: -40px;
+
+}
+.blog img{
+    margin-top: -10px;
+}
+
+
+#list{
+  
+    text-align: center;
+    padding-top: 50px;
+      font-size: 20px;
+      font-weight: 500;
+      text-decoration: none;
+      color:white;
+      margin-bottom: 50px;
+  
+  }
+  #list:hover{
+      color:#fc3 ;
+      text-decoration: underline;
+     
+  }
+
+
+   
+
+ #head{
+  
+    text-align: center;
+    padding-top: 50px;
+      font-size: 40px;
+      font-weight: 500;
+      text-decoration: none;
+      color:white;
+      margin-bottom: 50px;
+  
+  }
+  #head:hover{
+      color:#fc3 ;
+      text-decoration: underline;
+     
+  }
+
+
+ .contact{
+  width: 100%;
+    height:550px;
+    background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(image/hi.jpg);
+    background-position:center;
+    background-size:cover;
+
+}
+#button3{
+    background-color:black;
+    color:white;
+
+    border-style: none;
+  
+    border-radius: 10px;
+    border: #fc3;
+    outline: none;
+}
+
+.col-md-6{
+    text-align: center;
+   
+}
+#button3:hover{
+    background-color: rgb(63, 61, 61);
+    color:#fc3;
+}
+#button4{
+    border-radius: 10px;
+    
+    background-color: white;
+    color:black;
+}
+
+.footer {
+    padding: 20px 0px 0px 0px;
+    background-color: #f9f9f0;
+}
+
+#foot {
+    opacity: 0.5;
+    padding: 50px 0px 50px 30px;
+    line-height: 1.7rem;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    color: Black;
+
+}
+
+#foot:hover {
+    color: #fc3;
+    text-decoration: underline;
+    opacity: 0.9;
+
+}
+.contactbox{
+  overflow: hidden;
+  margin: 250px 0px 0px 0px;
+   width:400px;
+   height: 300px;
+  
+   color: black;
+    background-color:#fc3 ;
+    font-size: 25px;
+   padding:50px 50px 50px 50px;
+    border-radius: 10px;
+
+}
+
+
+h6{
+    margin-left: 50px;
+    opacity: 0.5;
+    font-size: 18px;
+}
+.icon1{
+    margin: 18px 0px 0px 150px;
+    font-size: 50px;
+}
+.icon {
+            margin: 18px 0px 20px 150px;
+            font-size: 50px;
+        }
+
+
+  h5{
+      padding-top: 10px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+ 
+.word{
+    font-size: 25px;
+    color: #000;
+    margin-top: 50px;
+
+}
+.word:hover{
+    color: #fc3;
+    text-decoration: none;
+}
+.animation{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 20px;
+    opacity: 0.5;
+    padding: 20px 0px 0px 30px;
+}
+.animation p{
+    margin-left: -100px;
+}
+.works{
+    width: 100%;
+    background-color: black;
+}
+.word img{
+    margin-top: -5px;
+    margin-left: 20px;
+}
+.book{
+    text-align: center;
+}
+.dede{
+    background-image: url(image/anty.jpg);
+    background-attachment: fixed;
+    background-position:contain;
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+    width:auto;
+    height: 1200px;
+    text-align: center;
+    border-radius: 5%;
+  
+}
+
+
+
+
+
+
+ 
+ 
+
+
+

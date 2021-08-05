@@ -1,0 +1,472 @@
+<?php
+if ($_SERVER['REQUESTED_METHOD']=='POST'){
+    $fname=$_POST['fname'];
+   $lname=$_POST['lname'];
+    $Email=$_POST['Email'];
+    $numbers=$_POST['numbers'];
+    $message=$_POST['message'];
+
+}
+['']
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $('#idimg').hover(function () {
+                $('#idimg').attr('src', 'zookti_logo.svg').animate({
+                    left: '150px',
+                    height: '60px',
+                    width: '100px'
+
+                });
+            }, function () {
+                $('#idimg').attr('src', 'image/images.png').animate({
+                    width: '40px',
+                    height: '30px'
+
+                });
+
+            })
+        })
+    </script>
+    <style>
+        .navbar {
+            display: flex;
+            color: #fc3;
+            padding: 20px;
+            padding-right: 40px;
+        }
+
+        h4 {
+            margin-top: 35px;
+        }
+
+        nav {
+
+            flex: 1;
+            text-align: right;
+
+        }
+
+        nav ul {
+            display: inline-block;
+            list-style-type: none;
+
+        }
+
+        nav ul li {
+            display: inline-block;
+
+            color: #fc3;
+        }
+
+        .logo {
+            margin-top: -18px;
+            margin-left: 20px;
+        }
+        
+      a {
+            text-decoration: none;
+            color:#fc3;
+            font-weight: 600;
+            font-size: 20px;
+        }
+        a:hover{
+            color: grey;
+        }
+
+        .er a {
+            text-decoration: none;
+            color: black;
+           
+            font-size: 40px;
+        }
+
+        .er a:hover {
+            color: #fc3;
+        }
+
+        .form {
+            margin-top: 100px;
+            background-color: #fc3;
+            color: black;
+            text-align: center;
+
+            padding: 50px 50px 50px 50px;
+            border-radius: 10px;
+
+        }
+
+
+        .btn {
+            background-color: white;
+            color: black;
+            margin-top: 5px;
+        }
+
+        .text {
+            margin-left: -250px;
+            margin-top: 15px;
+
+        }
+
+        .tex {
+            margin-left: -250px;
+        }
+
+        span {
+            color: red;
+        }
+
+        .head {
+            display: block;
+            font-size: 30px;
+
+            text-align: center;
+            text-decoration: none;
+            padding: 100px 0px 50px 0px;
+            line-height: 15px;
+            color: black;
+        }
+
+        .head:hover {
+            color: #fc3;
+            text-decoration: underline;
+        }
+
+        .input {
+            width: 300px;
+
+            padding: 5px 0px 5px 5px;
+            border-radius: 10px;
+            margin-top: 10px;
+            outline: none;
+        }
+
+
+
+        .location {
+            margin-top: 100px;
+            text-align: center;
+
+        }
+
+       img {
+            border-radius: 10%;
+        }
+
+        .linked {
+            color: black;
+            text-decoration: none;
+            padding: 100px 0px 100px 0px;
+            margin-bottom: 100px;
+
+        }
+
+        .linked:hover {
+            color: #fc3;
+            text-decoration: underline;
+        }
+
+
+        .lop {
+            margin-bottom: 100px;
+        }
+
+        .lop a {
+            font-size: 17px;
+        }
+
+        .pto {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        p {
+            margin-bottom: 30px;
+        }
+
+        .color {
+            color: black;
+            text-decoration: none;
+        }
+
+        .color:hover {
+            color: #fc3;
+            text-decoration: underline;
+        }
+
+        .icon {
+            margin: 20px 0px 30px 100px;
+            font-size: 50px;
+        }
+
+        .map {
+
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        .footer {
+            margin-top: 150px;
+            padding: 20px 0px 0px 0px;
+            background-color: #f9f9f0;
+        }
+
+        #foot {
+            opacity: 0.5;
+            padding: 50px 0px 50px 30px;
+
+            line-height: 1.7rem;
+            font-size: 18px;
+            font-weight: 500;
+            text-decoration: none;
+            color: Black;
+
+        }
+
+        #foot:hover {
+            color: #fc3;
+            text-decoration: underline;
+            opacity: 0.9;
+
+        }
+
+        h6 {
+            margin-left: 80px;
+            opacity: 0.5;
+            font-size: 18px;
+        }
+
+        .linkes {
+            color: black;
+            text-decoration: none;
+        }
+
+        .linkes:hover {
+            color: #fc3;
+        }
+
+        .linked {
+            color: black;
+        }
+
+        .photos2 {
+            margin-top: -15px;
+            border-radius: 50%;
+        }
+
+        .photos4 {
+            margin-top: 15px;
+            border-radius: 50%;
+        }
+        .photos1{
+            border-radius: 50%;
+        }
+        .photos{
+            border-radius: 505%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="image/images.png" id="idimg" width="40px"></a>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="menu.html">Menu</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="er">
+            <a href="" class="head">Contact Us</a>
+        </div>
+
+
+        <div class="boxu">
+            <div class="row">
+                <div class="col-sm-8">
+
+
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="location">
+                                <img src="image/wwww.png" width="50px">
+                                <h4>Location</h4>
+                                <p>3rd floor, Karki Bhawan,<br> Anamnagar, Kathmandu, Nepal</p>
+
+
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="location">
+                                <img src="image/oppp.png" width="50px">
+                                <h4>Phone</h4>
+                                <p>9851187463<br>
+                                    9828888954</p>
+
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+
+                            <div class="location">
+                                <img src="image/moon1.jpg" width="50px">
+                                <h4>Email</h4>
+                                <div class="lop">
+                                    <a href="" class="linked">info@zookti.com</a><br>
+                                    <a href="" class="linkes"> zooktico@gmail.com</a><br>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="pto">
+                                <img src="image/123.webp" width="100px" class="photos1"><br>
+                                <a href="" class="color"><strong>Ishant Sitoula</strong></a>
+
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="pto">
+                                <img src="image/1234.webp" width="100px" class="photos2"><br>
+                                <a href="" class="color"><strong>Aarohi Sharma</strong></a>
+
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="pto">
+
+
+                                <img src="image/12345.webp" width="100px" class="photos"><br>
+                                <a href="" class="color"><strong>Namita Odai</strong></a>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="pto">
+
+
+                                <img src="image/123456.webp" width="100px" class="photos4"><br>
+                                <a href="" class="color"><strong>Namita Odai</strong></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+
+                    <div class="flat">
+
+
+                        <div class="form">
+                            <form action="/Get_Post.php" method="post">
+
+                                <div class="form-group">
+
+
+                                    <label for="fname" class="text">Name<span>*</span></label><br>
+                                    <input type="text" class="input" id="fname" name="fname"
+                                        placeholder="your name"><br>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="lname" class="text">Caste<span>*</span></label><br>
+                                    <input type="text" class="input" id="lname" name="lname"
+                                        placeholder="Your last name"><br></div>
+                                <div class="form-group">
+
+
+                                    <label for="numbers" class="text">Phone<span>*</span></label><br>
+                                    <input type="text" class="input" id="numbers" name="numbers"
+                                        placeholder="98********"><br>
+                                </div>
+                                <div class="form-group">
+
+                                    <label for="Email" class="text">Email <span>*</span></label><br>
+                                    <input type="email" class="input" id="Email" name="Email"
+                                        placeholder="Youremail@gmail.com"><br>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="message" class="tex">Message <span>*</span></label><br>
+                                    <textarea name="message" style="width:300px; height:70px;" class="input" id="message"
+                                        placeholder="your message,comment and feedback">
+                                                                                  </textarea><br></div>
+
+                                <input type="submit" class="btn" value="Send"><br>
+
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-8">
+            <strong> Schedule a free consulting session with us</strong> . You can simply contact us by email or call. Or leave your details in the form and we’ll be in touch.
+
+        </div>
+    </div>
+</div>
+
+    <div class="container-fluid">
+     
+        <div class="row">
+            <div class="map">
+                <div class="col-sm-12">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3557.6261269111915!2d85.32811213278032!3d27.69733879346882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb199756bed2e3%3A0xdd682247ffbc7355!2sZookti!5e0!3m2!1sen!2snp!4v1627649661654!5m2!1sen!2snp"
+                        width="80%" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-5 mt-4">
+                    <h6>©2021 Zookti | All rights reserved</h6>
+
+                </div>
+                <div class="col-sm-2">
+                    <img src="image/images.png" class="icon" width="40px" height="40px">
+                </div>
+                <div class="col-sm-5 mt-3">
+                    <a href="" class="foots" id="foot">Facebook</a>
+                    <a href="" class="foots" id="foot">Linkedin</a>
+                    <a href="" class="foots" id="foot">Youtube</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
